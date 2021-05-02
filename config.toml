@@ -52,7 +52,7 @@ canonifyurls = true
 [Params.logo]
   #image = "img/placeholder.png" # Logo image. Path relative to "static"
   image = "twitter_icon04-4.png"
-  title = "kaedefuto_blog" # Logo title, otherwise will use site title
+  title = "kaede_blog" # Logo title, otherwise will use site title
   subtitle = "kaedefutoの備忘録" # Logo subtitle
 
 [Params.sidebar]
@@ -72,11 +72,11 @@ canonifyurls = true
 [Params.widgets.social]
   # Enable parts of social widget
   #facebook = "username"
-  twitter = "username"
-  instagram = "username"
+  twitter = "https://twitter.com/21291908kafux"
+  instagram = "https://www.instagram.com/fykaedy10/?hl=ja"
   #linkedin = "username"
   #telegram = "username"
-  github = "username"
+  github = "https://github.com/kaedefuto"
   #gitlab = "username"
   #bitbucket = "username"
   email = "example@example.com"
@@ -87,28 +87,28 @@ canonifyurls = true
     name = "Home"
     url = "/"
     weight = 1
-    [[menu.main]]
+  [[menu.main]]
+    identifier = "biography"
+    name = "Biography"
+    url = "http://www.nadasemi.ii.konan-u.ac.jp/wordpress/wp-content/uploads/2020/04/Futo_Profile.html"
+    weight = 2
+  [[menu.main]]
     identifier = "tag"
     name = "Tag"
     url = "/tags/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     identifier = "categories"
     name = "Category"
     url = "/categories/"
-    weight = 3
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/post/000/about/"
     weight = 4
   [[menu.main]]
     identifier = "github"
     name = "Github"
-    url = "Tag"
+    url = "https://github.com/kaedefuto"
     weight = 5
   [[menu.main]]
     identifier = "twitter"
     name = "Twitter"
-    url = "Tag"
+    url = "https://twitter.com/21291908kafux"
     weight = 6
