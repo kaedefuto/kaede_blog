@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kaedefuto_blog</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on kaedefuto_blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 01 May 2021 14:34:04 +0900</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hacknote</title>
+      <link>http://example.org/posts/hacknote/</link>
+      <pubDate>Sat, 01 May 2021 14:34:04 +0900</pubDate>
+      
+      <guid>http://example.org/posts/hacknote/</guid>
+      <description>最初の記事を投稿しました2</description>
+    </item>
+    
+    <item>
+      <title>Hacknote</title>
+      <link>http://example.org/posts/hacknote2/</link>
+      <pubDate>Sat, 01 May 2021 14:34:04 +0900</pubDate>
+      
+      <guid>http://example.org/posts/hacknote2/</guid>
+      <description>最初の記事を投稿しました</description>
+    </item>
+    
+  </channel>
+</rss>
