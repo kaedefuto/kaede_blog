@@ -1,6 +1,6 @@
 
 #baseURL = "http://example.org/"
-baseURL = "https://kaedefuto.github.io/blog"
+baseURL = "https://kaedefuto.github.io/kaede_blog"
 
 #title = "kaedefuto_blog"
 theme = "mainroad"

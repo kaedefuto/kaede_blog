@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kaedefuto.github.io/blog/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/blog/categories/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/categories/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/blog/posts/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/tags/hugo/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/blog/posts/sample/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/categories/hugo/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/blog/tags/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/posts/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/blog/tags/test/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/tags/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/blog/categories/test/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/posts/sample/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url>
 </urlset>
