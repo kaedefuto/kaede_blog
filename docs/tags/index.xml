@@ -6,7 +6,16 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 01 May 2021 15:52:56 +0900</lastBuildDate><atom:link href="https://kaedefuto.github.io/kaede_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 May 2021 18:38:26 +0900</lastBuildDate><atom:link href="https://kaedefuto.github.io/kaede_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PyTorch</title>
+      <link>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</link>
+      <pubDate>Tue, 04 May 2021 18:38:26 +0900</pubDate>
+      
+      <guid>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://kaedefuto.github.io/kaede_blog/tags/hugo/</link>

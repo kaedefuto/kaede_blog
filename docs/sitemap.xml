@@ -3,10 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kaedefuto.github.io/kaede_blog/</loc>
-    <lastmod>2021-05-01T15:52:56+09:00</lastmod>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
   </url><url>
     <loc>https://kaedefuto.github.io/kaede_blog/categories/</loc>
-    <lastmod>2021-05-01T15:52:56+09:00</lastmod>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kaedefuto.github.io/kaede_blog/posts/</loc>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</loc>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kaedefuto.github.io/kaede_blog/categories/pytorch/</loc>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kaedefuto.github.io/kaede_blog/posts/1/conda/</loc>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
+  </url><url>
+    <loc>https://kaedefuto.github.io/kaede_blog/tags/</loc>
+    <lastmod>2021-05-04T18:38:26+09:00</lastmod>
   </url><url>
     <loc>https://kaedefuto.github.io/kaede_blog/tags/hugo/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
@@ -14,13 +29,7 @@
     <loc>https://kaedefuto.github.io/kaede_blog/categories/hugo/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url><url>
-    <loc>https://kaedefuto.github.io/kaede_blog/posts/</loc>
-    <lastmod>2021-05-01T15:52:56+09:00</lastmod>
-  </url><url>
-    <loc>https://kaedefuto.github.io/kaede_blog/tags/</loc>
-    <lastmod>2021-05-01T15:52:56+09:00</lastmod>
-  </url><url>
-    <loc>https://kaedefuto.github.io/kaede_blog/posts/sample/</loc>
+    <loc>https://kaedefuto.github.io/kaede_blog/posts/0/sample/</loc>
     <lastmod>2021-05-01T15:52:56+09:00</lastmod>
   </url>
 </urlset>

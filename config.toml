@@ -6,11 +6,13 @@ baseURL = "https://kaedefuto.github.io/kaede_blog"
 theme = "mainroad"
 
 #baseurl = "/"
+DefaultContentLanguage = "ja"
 languageCode = "ja"
 paginate = "10" # Number of posts per page
 publishDir = "docs"
 canonifyurls = true
-
+hasCJKLanguage = true # 日本語・中国語・韓国語の単語カウントを有効にする
+summaryLength = 120 # サマリーの長さを120単語にする
 #disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 #googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
@@ -21,8 +23,8 @@ canonifyurls = true
 
 [Params]
   subtitle = "kaedefutoの備忘録" # Deprecated in favor of .Site.Params.logo.subtitle
-  description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-  copyright = "John Doe" # Footer copyright holder, otherwise will use site title
+  description = "kaede_blog " # Site description. Used in meta description
+  copyright = "kaedefuto" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -42,7 +44,7 @@ canonifyurls = true
   customJS = ["js/custom.js"] # Include custom JS files
 
 [Params.style.vars]
-  highlightColor = "#e22d30" # Override highlight color
+  highlightColor = "#8ee22d" # Override highlight color
 
   # Override font-family sets. Secondary font-family set responsible for pre, code, kbd, and samp tags font
   # Take care of different quotes OR escaping symbols in these params if necessary
@@ -79,7 +81,7 @@ canonifyurls = true
   github = "kaedefuto"
   #gitlab = "username"
   #bitbucket = "username"
-  email = "example@example.com"
+  #email = "example@example.com"
 
 [menu]
   [[menu.main]]
@@ -87,11 +89,6 @@ canonifyurls = true
     name = "Home"
     url = "/"
     weight = 1
-  [[menu.main]]
-    identifier = "biography"
-    name = "Biography"
-    url = "http://www.nadasemi.ii.konan-u.ac.jp/wordpress/wp-content/uploads/2020/04/Futo_Profile.html"
-    weight = 2
   [[menu.main]]
     identifier = "tag"
     name = "Tag"
@@ -101,14 +98,19 @@ canonifyurls = true
     identifier = "categories"
     name = "Category"
     url = "/categories/"
-    weight = 4
+    weight = 3
   [[menu.main]]
     identifier = "github"
     name = "Github"
     url = "https://github.com/kaedefuto"
-    weight = 5
+    weight = 4
   [[menu.main]]
     identifier = "twitter"
     name = "Twitter"
     url = "https://twitter.com/21291908kafux"
+    weight = 5
+  [[menu.main]]
+    identifier = "biography"
+    name = "Biography"
+    url = "http://www.nadasemi.ii.konan-u.ac.jp/wordpress/wp-content/uploads/2020/04/Futo_Profile.html"
     weight = 6
