@@ -72,8 +72,8 @@ canonifyurls = true
 [Params.widgets.social]
   # Enable parts of social widget
   #facebook = "username"
-  twitter = "https://twitter.com/21291908kafux"
-  instagram = "http://instagram.com/fykaedy10/"
+  twitter = "21291908kafux"
+  instagram = "fykaedy10"
   #linkedin = "username"
   #telegram = "username"
   github = "kaedefuto"
