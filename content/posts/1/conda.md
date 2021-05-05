@@ -22,20 +22,20 @@ BERTを実装する際のAnacondaでGPUが使えるPyTorch環境を構築しま�
 まず**conda**で仮想環境を作成します．
 
 ```
-conda　create -n pytorch python=3.7
+$ conda　create -n pytorch python=3.7
 ```
 
 作成した環境に**activate**します．
 
 ```
-conda　activate pytorch
+$ conda　activate pytorch
 ```
 
 次にパッケージを[ここから](https://pytorch.org/) **conda**でインストールします．
 CUDAのバージョンが11.2なので，今回はこちらをインストールします．
 
 ```
-conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
+$ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 ```
 
 最後にGPUが使えるかどうかを確認します．
