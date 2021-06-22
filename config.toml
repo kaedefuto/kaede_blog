@@ -112,5 +112,5 @@ summaryLength = 120 # サマリーの長さを120単語にする
   [[menu.main]]
     identifier = "biography"
     name = "Biography"
-    url = "http://www.nadasemi.ii.konan-u.ac.jp/wordpress/wp-content/uploads/2020/04/Futo_Profile.html"
+    url = "https://www.nadasemi.jp/members/FUTO/Futo_Profile.html"
     weight = 6
