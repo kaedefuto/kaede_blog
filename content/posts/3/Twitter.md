@@ -10,7 +10,9 @@ author: "kaedefuto"
 
 # Academic Researchの申請方法
 
-Academic Researchの申請方法について説明します．研究室ではStreaming APIとSearch APIで収集していますが，それだけではツイート数が足りなかったため今回申請しました．
+Academic Researchの申請方法について説明します．
+
+研究室ではStreaming APIとSearch APIで収集していますが，それだけではツイート数が足りなかったため今回申請しました．
 
 ## Academic Researchとは
 - フルアーカイブアクセスが可能
@@ -27,19 +29,48 @@ Academic Researchの申請方法について説明します．研究室ではStr
 
 
 ## 申請方法
-Academic Researchを申請する前に，API利用申請を完了させてください．Developer Portalにログインし，ProductsのTwitter APIをクリックします．
+Academic Researchを申請する前に，API利用申請を完了させてください．
 
-![This is a image](/img/1.png)
+Developer Portalにログインし，ProductsのTwitter APIをクリックします．
+
+![img1](/img/1.png)
 
 まず**Get started**をクリックします．
 
-次に**Start Academic Research application**をクリックしてください．
+![img1](/img/2.png)
 
-次に住んでる国とコーディングスキルを選択してください．コーディングスキルは**Some experience**を選択しました．
+次に**Start Academic Research application**をクリックします．
 
-次にプロフィールを記入してください．
-- 名前
-- URL
-- 大学名
-- 国
--
+クリックすると基本情報の入力画面に移ります．
+
+![img1](/img/3.png)
+
+住んでいる国とコーディングスキルを選択してください．
+
+ちなみにコーディングスキルは**Some experience**を選択しました．
+
+**Next**をクリックすると次に移ります．
+
+![img1](/img/4.png)
+
+学生情報を入力します．
+
+- 「**Full name**」は英語で記入します．私は日本語で記入したため，後でメールで英語の名前を送りました．
+- 「**Provide at least one (or more) of the following:**」でリンクを記入します．それぞれ訳すと，
+  - 「**A link to your profile in your institution’s faculty directory**」:教育機関の教員名簿に掲載されているあなたのプロフィールへのリンク
+  - 「**A link to your Google Scholar profile**」:あなたのGoogle Scholarプロフィールへのリンク
+  - 「**A link to your research group, lab or departmental website**」あなたの研究グループ、研究室、または学科のウェブサイトへのリンク
+
+教員名簿やGoogle Scholarプロフィールへのリンクがないため，研究室のリンク(日本語版)を記入しました．
+ただ，これだけだとメールで再度リンクを送ってくださいって言われたので，研究室のサイト(英語版)を作成し，大学院のサイト(英語版)のリンクを再度送りました．
+
+
+- 「**Academic institution**」で大学名を英語で記入します．
+- 「**Home country of academic institution**」では
+- 「**State, region, or province of academic institution (optional)**」で県名（~prefecture）を記入します．
+- 「**City of academic institution (optional)**」で市名と区名を記入します．
+- 「**Academic field of study or discipline**」研究分野は「Deep Learning」「Machine Learning」を記入しました．
+- 「**Department, school, or lab name**」研究室名を入力しました．
+- 「**Academic role**」は大学院生なので「**Master's candidate**」を選択しました．
+
+全て記入できたら**Next**をクリックします．
