@@ -4,19 +4,20 @@ date: 2021-07-04T12:31:01+09:00
 draft: false
 tags: [Twitter]
 categories: [Twitter]
-summary: "TwitterAPI Academic Researchの申請方法"
+summary: "Academic Researchの申請方法"
 author: "kaedefuto"
 ---
 
-# TwitterAPI Academic Researchの申請方法
+# Academic Researchの申請方法
 
-Academic Researchの申請方法について説明します．
+Academic Researchの申請方法について説明します．研究室ではStreaming APIとSearch APIで収集していますが，それだけではツイート数が足りなかったため今回申請しました．
 
 ## Academic Researchとは
 - フルアーカイブアクセスが可能
 - 1ヶ月1000万件取得可能
 
-ただし，[申請条件](https://developer.twitter.com/en/products/twitter-api/academic-research/application-info)として
+## 申請条件
+[申請条件](https://developer.twitter.com/en/products/twitter-api/academic-research/application-info)は以下の通りです．
 
 - 修士課程の学生、博士課程の候補者、ポスドク、教員または学術機関や大学で研究に従事している人であること
 
@@ -24,16 +25,13 @@ Academic Researchの申請方法について説明します．
 
 - 非営利目的で使うこと
 
-があります．
-
-研究室ではStreaming APIとSearch APIで収集していますが，それだけではツイート数が足りなかったため今回申請しました．
 
 ## 申請方法
-Academic Researchを申請する前に，API利用申請を完了させてください．
+Academic Researchを申請する前に，API利用申請を完了させてください．Developer Portalにログインし，ProductsのTwitter APIをクリックします．
 
-<img src="https://github.com/kaedefuto/blog/contents/posts/3/img/blob/master/1.png" alt="" title="サンプル"><br>
+<img src="https://github.com/kaedefuto/kaede_blog/tree/master/content/posts/3/img/1.png" alt="" title="サンプル"><br>
 
-まず**Get started**をクリックしてください．
+まず**Get started**をクリックします．
 
 次に**Start Academic Research application**をクリックしてください．
 
