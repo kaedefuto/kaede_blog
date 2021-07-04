@@ -29,7 +29,7 @@ Academic Researchの申請方法について説明します．研究室ではStr
 ## 申請方法
 Academic Researchを申請する前に，API利用申請を完了させてください．Developer Portalにログインし，ProductsのTwitter APIをクリックします．
 
-<img src="https://github.com/kaedefuto/kaede_blog/tree/master/content/posts/3/img/1.png" alt="" title="サンプル"><br>
+![This is a image](/img/1.png)
 
 まず**Get started**をクリックします．
 
