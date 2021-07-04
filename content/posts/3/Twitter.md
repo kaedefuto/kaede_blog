@@ -1,5 +1,5 @@
 ---
-title: "Twitter"
+title: "TwitterAPI Academic Researchの申請方法"
 date: 2021-07-04T12:31:01+09:00
 draft: false
 tags: [Twitter]
@@ -12,8 +12,7 @@ author: "kaedefuto"
 
 Academic Researchの申請方法について説明します．
 
-Academic Researchでは
-
+## Academic Researchとは
 - フルアーカイブアクセスが可能
 - 1ヶ月1000万件取得可能
 
@@ -30,7 +29,6 @@ Academic Researchでは
 研究室ではStreaming APIとSearch APIで収集していますが，それだけではツイート数が足りなかったため今回申請しました．
 
 ## 申請方法
-
 Academic Researchを申請する前に，API利用申請を完了させてください．
 
 <img src="https://github.com/kaedefuto/blog/contents/posts/3/img/blob/master/1.png" alt="" title="サンプル"><br>
