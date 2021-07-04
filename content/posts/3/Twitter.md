@@ -52,6 +52,7 @@ Developer Portalにログインし，ProductsのTwitter APIをクリックしま
 「**Next**」をクリックすると次に移ります．
 
 ![img4](/img/4.png)
+
 ![img5](/img/5.png)
 
 英語で学生情報を入力します．
@@ -107,3 +108,5 @@ Developer Portalにログインし，ProductsのTwitter APIをクリックしま
 ## 申請受理
 
 受理されるとダッシュボードに「**Academic Research**」が追加されます.
+
+![img8](/img/10.png)
