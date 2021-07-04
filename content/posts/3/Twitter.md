@@ -29,9 +29,11 @@ Academic Researchでは
 
 研究室ではStreaming APIとSearch APIで収集していますが，それだけではツイート数が足りなかったため今回申請しました．
 
-##　申請方法
+## 申請方法
 
 Academic Researchを申請する前に，API利用申請を完了させてください．
+
+<img src="https://github.com/kaedefuto/blog/contents/posts/3/img/blob/master/1.png" alt="" title="サンプル"><br>
 
 まず**Get started**をクリックしてください．
 
