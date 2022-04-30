@@ -18,7 +18,7 @@
 		<meta itemprop="name" content="pipでPytorch環境作成">
 <meta itemprop="description" content="pipでGPUが使えるPytorch環境を構築"><meta itemprop="datePublished" content="2022-04-30T10:08:14&#43;09:00" />
 <meta itemprop="dateModified" content="2022-04-30T10:08:14&#43;09:00" />
-<meta itemprop="wordCount" content="462">
+<meta itemprop="wordCount" content="706">
 <meta itemprop="keywords" content="Pytorch,pip," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="pipでPytorch環境作成"/>
@@ -110,6 +110,8 @@
 		<nav id="TableOfContents">
   <ul>
     <li><a href="#環境">環境</a></li>
+    <li><a href="#構築方法">構築方法</a></li>
+    <li><a href="#解決策">解決策</a></li>
   </ul>
 </nav>
 	</div>
@@ -121,11 +123,12 @@
 <li>GPU:NVIDIA RTX A6000</li>
 <li>CUDA Version: 11.6</li>
 </ul>
-<p>上記の環境で<a href="https://kaedefuto.github.io/kaede_blog/posts/1/conda/">前回の記事</a>と同様に<strong>conda</strong>を使って<a href="https://pytorch.org/">PyTorch</a>をインストールしました．</p>
-<p>GPUが使えるかどうかを確認します．</p>
+<h2 id="構築方法">構築方法</h2>
+<p>上記の環境で<a href="https://kaedefuto.github.io/kaede_blog/posts/1/conda/">前回の記事</a>と同様に<strong>conda</strong>を使って<a href="https://pytorch.org/">PyTorch</a>をインストールしましたが，エラーが出たので記事にします．</p>
+<p><a href="https://kaedefuto.github.io/kaede_blog/posts/1/conda/">前回の記事</a>通りに環境を作成し，GPUが使えるかどうかを確認します．</p>
 <pre><code>import torch  
 print(torch.cuda.is_available())
-</code></pre><p><strong>True</strong>と表示されたのGPUが使えると思いきや，実際に学習させると以下のエラーが出て，学習ができませんでした．</p>
+</code></pre><p>無事<strong>True</strong>と表示されたのGPUが使えると思いきや，実際に学習させると以下のエラーが出たため学習ができませんでした．</p>
 <pre><code>__init__.py:104: UserWarning: 
 NVIDIA RTX A6000 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
 The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
@@ -134,11 +137,27 @@ If you want to use the NVIDIA RTX A6000 GPU with PyTorch, please check the instr
   warnings.warn(incompatible_device_warn.format(device_name, capability, &quot; &quot;.join(arch_list), device_name))
 
 RuntimeError: CUDA error: no kernel image is available for execution on the device
-</code></pre><p>PyTorchのバージョンやCUDAのバージョンがあってなさそうなので，PyTorchのバージョンとCUDAのバージョンを変更しましたが常に同じエラーが出てしまいました．
-わからないのでエラーを調べてみると，<strong>conda</strong>だとこのGPU（NVIDIA RTX A6000）は対応していないそうです．<strong>pip</strong>だと行けるとのことだったので試してみました．</p>
-<p>今回はTorchtextの0.9.0を使うため，TorchtextのバージョンにあったPytorchをインストールしました．</p>
+</code></pre><p>エラー内容はPyTorchに対応するCUDAのバージョンがあっていないとのことなので，PyTorchのバージョンを色々変更しましたが同じエラーが出てしまいました．
+また，CUDAのバージョンも変更しましたがダメでした．</p>
+<h2 id="解決策">解決策</h2>
+<p>わからないのでエラー内容を調べてみると，<strong>conda</strong>だとこのGPU（NVIDIA RTX A6000）は対応していないことがわかりました．（<a href="https://github.com/pytorch/pytorch/issues/52288">参考</a>）また，<strong>conda</strong>ではなく<strong>pip</strong>だといけそうなので試してみました．（<a href="https://teratail.com/questions/358588">参考</a>）</p>
+<p>今回は<a href="https://pytorch.org/text/stable/index.html#">Torchtext</a>の0.9.0を使うため，<a href="https://pytorch.org/get-started/previous-versions/">TorchtextのバージョンにあったPytorch</a>をインストールしました．（<a href="https://github.com/pytorch/text#installation">参考</a>）</p>
 <pre><code>pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
-</code></pre><p>これでエラーも消え，学習することができました．</p>
+</code></pre><p>GPUが使えるかどうかを確認します．</p>
+<pre><code>import torch
+print(torch.cuda.is_available())
+print(torch.version.cuda)
+print(torch.__version__)
+print(torch.cuda.current_device())
+print(torch.cuda.get_arch_list())
+
+#True
+#11.1
+#1.8.0+cu111
+#0
+#['sm_37', 'sm_50', 'sm_60', 'sm_70', 'sm_75', 'sm_80', 'sm_86']
+</code></pre><p>これでエラーも消え，学習することができました．
+最新のPyTorchをインストールした後に，バージョンが対応していないTorchtextをインストールすると，PyTorchのバージョンが変わるのでご注意ください．（最新のTorchtextが色々変わりすぎて使いずらい&hellip;）</p>
 
 		</div>
 		<footer class="post__footer">
