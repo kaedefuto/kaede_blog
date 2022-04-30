@@ -89,11 +89,11 @@ summaryLength = 120 # サマリーの長さを120単語にする
     name = "Home"
     url = "/"
     weight = 1
-  [[menu.main]]
-    identifier = "tag"
-    name = "Tag"
-    url = "/tags/"
-    weight = 3
+  #[[menu.main]]
+    #identifier = "tag"
+    #name = "Tag"
+    #url = "/tags/"
+    #weight = 2
   [[menu.main]]
     identifier = "categories"
     name = "Category"
@@ -109,8 +109,8 @@ summaryLength = 120 # サマリーの長さを120単語にする
     name = "Twitter"
     url = "https://twitter.com/21291908kafux"
     weight = 5
-  [[menu.main]]
-    identifier = "biography"
-    name = "Biography"
-    url = "https://www.nadasemi.jp/members/FUTO/Futo_Profile.html"
-    weight = 6
+  #[[menu.main]]
+    #identifier = "biography"
+    #name = "Biography"
+    #url = "https://www.nadasemi.jp/members/FUTO/Futo_Profile.html"
+    #weight = 6
