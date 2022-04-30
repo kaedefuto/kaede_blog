@@ -43,9 +43,9 @@ RuntimeError: CUDA error: no kernel image is available for execution on the devi
 
 ## 解決策
 
-わからないのでエラー内容を調べてみると，**conda**だとこのGPU（NVIDIA RTX A6000）は対応していないことがわかりました．（[参考](https://github.com/pytorch/pytorch/issues/52288)）また，**conda**ではなく**pip**だといけそうなので試してみました．（[参考](https://teratail.com/questions/358588)）
+わからないのでエラー内容を調べてみると，**conda**だとこのGPU（NVIDIA RTX A6000）は対応していないことがわかりました([参考](https://github.com/pytorch/pytorch/issues/52288))．また，**conda**ではなく**pip**だといけそうなので試してみました([参考](https://teratail.com/questions/358588))．
 
-今回は[Torchtext](https://pytorch.org/text/stable/index.html#)の0.9.0を使うため，[TorchtextのバージョンにあったPytorch](https://pytorch.org/get-started/previous-versions/)をインストールしました．（[参考](https://github.com/pytorch/text#installation)）
+今回は[Torchtext](https://pytorch.org/text/stable/index.html#)の0.9.0を使うため，[TorchtextのバージョンにあったPytorch](https://pytorch.org/get-started/previous-versions/)をインストールしました([参考](https://github.com/pytorch/text#installation))．
 
 ```
 pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
