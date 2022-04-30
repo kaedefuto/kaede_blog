@@ -140,8 +140,8 @@ RuntimeError: CUDA error: no kernel image is available for execution on the devi
 </code></pre><p>エラー内容はPyTorchに対応するCUDAのバージョンがあっていないとのことなので，PyTorchのバージョンを色々変更しましたが同じエラーが出てしまいました．
 また，CUDAのバージョンも変更しましたがダメでした．</p>
 <h2 id="解決策">解決策</h2>
-<p>わからないのでエラー内容を調べてみると，<strong>conda</strong>だとこのGPU（NVIDIA RTX A6000）は対応していないことがわかりました．（<a href="https://github.com/pytorch/pytorch/issues/52288">参考</a>）また，<strong>conda</strong>ではなく<strong>pip</strong>だといけそうなので試してみました．（<a href="https://teratail.com/questions/358588">参考</a>）</p>
-<p>今回は<a href="https://pytorch.org/text/stable/index.html#">Torchtext</a>の0.9.0を使うため，<a href="https://pytorch.org/get-started/previous-versions/">TorchtextのバージョンにあったPytorch</a>をインストールしました．（<a href="https://github.com/pytorch/text#installation">参考</a>）</p>
+<p>わからないのでエラー内容を調べてみると，<strong>conda</strong>だとこのGPU(NVIDIA RTX A6000)は対応していないことがわかりました(<a href="https://github.com/pytorch/pytorch/issues/52288">参考</a>)．また，<strong>conda</strong>ではなく<strong>pip</strong>だといけそうなので試してみました(<a href="https://teratail.com/questions/358588">参考</a>)．</p>
+<p>今回は<a href="https://pytorch.org/text/stable/index.html#">Torchtext</a>の0.9.0を使うため，<a href="https://pytorch.org/get-started/previous-versions/">TorchtextのバージョンにあったPytorch</a>をインストールしました(<a href="https://github.com/pytorch/text#installation">参考</a>)．</p>
 <pre><code>pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
 </code></pre><p>GPUが使えるかどうかを確認します．</p>
 <pre><code>import torch
@@ -157,7 +157,7 @@ print(torch.cuda.get_arch_list())
 #0
 #['sm_37', 'sm_50', 'sm_60', 'sm_70', 'sm_75', 'sm_80', 'sm_86']
 </code></pre><p>これでエラーも消え，学習することができました．
-最新のPyTorchをインストールした後に，バージョンが対応していないTorchtextをインストールすると，PyTorchのバージョンが変わるのでご注意ください．（最新のTorchtextが色々変わりすぎて使いずらい&hellip;）</p>
+最新のPyTorchをインストールした後に，バージョンが対応していないTorchtextをインストールすると，PyTorchのバージョンが変わるのでご注意ください．(最新のTorchtextが色々変わりすぎて使いずらい&hellip;)</p>
 
 		</div>
 		<footer class="post__footer">

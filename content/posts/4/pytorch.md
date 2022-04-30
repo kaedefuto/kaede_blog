@@ -25,6 +25,7 @@ author: "kaedefuto"
 import torch  
 print(torch.cuda.is_available())
 ```
+
 無事**True**と表示されたのGPUが使えると思いきや，実際に学習させると以下のエラーが出たため学習ができませんでした．
 
 ```
@@ -43,7 +44,7 @@ RuntimeError: CUDA error: no kernel image is available for execution on the devi
 
 ## 解決策
 
-わからないのでエラー内容を調べてみると，**conda**だとこのGPU（NVIDIA RTX A6000）は対応していないことがわかりました([参考](https://github.com/pytorch/pytorch/issues/52288))．また，**conda**ではなく**pip**だといけそうなので試してみました([参考](https://teratail.com/questions/358588))．
+わからないのでエラー内容を調べてみると，**conda**だとこのGPU(NVIDIA RTX A6000)は対応していないことがわかりました([参考](https://github.com/pytorch/pytorch/issues/52288))．また，**conda**ではなく**pip**だといけそうなので試してみました([参考](https://teratail.com/questions/358588))．
 
 今回は[Torchtext](https://pytorch.org/text/stable/index.html#)の0.9.0を使うため，[TorchtextのバージョンにあったPytorch](https://pytorch.org/get-started/previous-versions/)をインストールしました([参考](https://github.com/pytorch/text#installation))．
 
@@ -69,5 +70,5 @@ print(torch.cuda.get_arch_list())
 ```
 
 これでエラーも消え，学習することができました．
-最新のPyTorchをインストールした後に，バージョンが対応していないTorchtextをインストールすると，PyTorchのバージョンが変わるのでご注意ください．（最新のTorchtextが色々変わりすぎて使いずらい...）
+最新のPyTorchをインストールした後に，バージョンが対応していないTorchtextをインストールすると，PyTorchのバージョンが変わるのでご注意ください．(最新のTorchtextが色々変わりすぎて使いずらい...)
 
