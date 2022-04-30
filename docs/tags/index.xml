@@ -6,7 +6,25 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Jul 2021 12:31:01 +0900</lastBuildDate><atom:link href="https://kaedefuto.github.io/kaede_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 10:08:14 +0900</lastBuildDate><atom:link href="https://kaedefuto.github.io/kaede_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pip</title>
+      <link>https://kaedefuto.github.io/kaede_blog/tags/pip/</link>
+      <pubDate>Sat, 30 Apr 2022 10:08:14 +0900</pubDate>
+      
+      <guid>https://kaedefuto.github.io/kaede_blog/tags/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</link>
+      <pubDate>Sat, 30 Apr 2022 10:08:14 +0900</pubDate>
+      
+      <guid>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Twitter</title>
       <link>https://kaedefuto.github.io/kaede_blog/tags/twitter/</link>
@@ -31,15 +49,6 @@
       <pubDate>Wed, 05 May 2021 10:19:07 +0900</pubDate>
       
       <guid>https://kaedefuto.github.io/kaede_blog/tags/ufw/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PyTorch</title>
-      <link>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</link>
-      <pubDate>Tue, 04 May 2021 18:38:26 +0900</pubDate>
-      
-      <guid>https://kaedefuto.github.io/kaede_blog/tags/pytorch/</guid>
       <description></description>
     </item>
     

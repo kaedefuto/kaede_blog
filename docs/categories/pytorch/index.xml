@@ -6,7 +6,16 @@
     <description>Recent content in PyTorch on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 04 May 2021 18:38:26 +0900</lastBuildDate><atom:link href="https://kaedefuto.github.io/kaede_blog/categories/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 10:08:14 +0900</lastBuildDate><atom:link href="https://kaedefuto.github.io/kaede_blog/categories/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pipでPytorch環境作成</title>
+      <link>https://kaedefuto.github.io/kaede_blog/posts/4/pytorch/</link>
+      <pubDate>Sat, 30 Apr 2022 10:08:14 +0900</pubDate>
+      
+      <guid>https://kaedefuto.github.io/kaede_blog/posts/4/pytorch/</guid>
+      <description>pipでGPUが使えるPytorch環境を構築</description>
+    </item>
+    
     <item>
       <title>PyTorch環境作成</title>
       <link>https://kaedefuto.github.io/kaede_blog/posts/1/conda/</link>

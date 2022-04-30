@@ -4,25 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ufwの設定 - </title>
+	<title>pipでPytorch環境作成 - </title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="ufwの設定" />
-<meta property="og:description" content="ufwコマンドでファイアーフォールの設定" />
+		<meta property="og:title" content="pipでPytorch環境作成" />
+<meta property="og:description" content="pipでGPUが使えるPytorch環境を構築" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kaedefuto.github.io/kaede_blog/posts/2/ufw/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-05T10:19:07&#43;09:00" />
-<meta property="article:modified_time" content="2021-05-05T10:19:07&#43;09:00" />
+<meta property="og:url" content="https://kaedefuto.github.io/kaede_blog/posts/4/pytorch/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-30T10:08:14&#43;09:00" />
+<meta property="article:modified_time" content="2022-04-30T10:08:14&#43;09:00" />
 
 
-		<meta itemprop="name" content="ufwの設定">
-<meta itemprop="description" content="ufwコマンドでファイアーフォールの設定"><meta itemprop="datePublished" content="2021-05-05T10:19:07&#43;09:00" />
-<meta itemprop="dateModified" content="2021-05-05T10:19:07&#43;09:00" />
-<meta itemprop="wordCount" content="621">
-<meta itemprop="keywords" content="ufw,Ubuntu," />
+		<meta itemprop="name" content="pipでPytorch環境作成">
+<meta itemprop="description" content="pipでGPUが使えるPytorch環境を構築"><meta itemprop="datePublished" content="2022-04-30T10:08:14&#43;09:00" />
+<meta itemprop="dateModified" content="2022-04-30T10:08:14&#43;09:00" />
+<meta itemprop="wordCount" content="462">
+<meta itemprop="keywords" content="Pytorch,pip," />
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ufwの設定"/>
-<meta name="twitter:description" content="ufwコマンドでファイアーフォールの設定"/>
+<meta name="twitter:title" content="pipでPytorch環境作成"/>
+<meta name="twitter:description" content="pipでGPUが使えるPytorch環境を構築"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -109,12 +109,12 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">ufwの設定</h1>
+			<h1 class="post__title">pipでPytorch環境作成</h1>
 			<div class="post__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">kaedefuto</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-05-05T10:19:07&#43;09:00">2021-05-05</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://kaedefuto.github.io/kaede_blog/categories/ubuntu/" rel="category">Ubuntu</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-30T10:08:14&#43;09:00">2022-04-30</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://kaedefuto.github.io/kaede_blog/categories/pytorch/" rel="category">PyTorch</a>
 	</span>
 </div></div>
 		</header>
@@ -124,58 +124,36 @@
 		<nav id="TableOfContents">
   <ul>
     <li><a href="#環境">環境</a></li>
-    <li><a href="#各種コマンド">各種コマンド</a></li>
-    <li><a href="#設定方法">設定方法</a></li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h1 id="ufwコマンドでファイアーフォールの設定">ufwコマンドでファイアーフォールの設定</h1>
-<p>ufwコマンドでファイアーウォールを設定します．<br>
-ufwはファイアーウォールを設定するコマンドです．</p>
+			<h1 id="pytorch環境作成">PyTorch環境作成</h1>
 <h2 id="環境">環境</h2>
 <ul>
-<li>Ubuntu18.04</li>
+<li>Ubuntu:20.04</li>
+<li>GPU:NVIDIA RTX A6000</li>
+<li>CUDA Version: 11.6</li>
 </ul>
-<h2 id="各種コマンド">各種コマンド</h2>
-<p>ufwの状態とルールの表示</p>
-<pre><code>$ sudo ufw status numberd
-</code></pre><p>ufwの有効化</p>
-<pre><code>$ sudo ufw enable
-</code></pre><p>ufwの無効化</p>
-<pre><code>$ sudo ufw disable
-</code></pre><p>ルールのリセット</p>
-<pre><code>$ sudo ufw reset
-</code></pre><p>ルールの追加<br>
-fromで指定したアドレスからtoで指定したアドレスかつポート番号への通信を受信(制限)します．  <br>
-アドレスを指定しない場合は<code>Anywhere</code>とし，ポート番号を指定しない場合は<code>any port</code>とします．</p>
-<pre><code>$ sudo ufw allow from &quot;ネットワークアドレス&quot; to &quot;ホストアドレス&quot; port &quot;ポート番号&quot;&quot;
-$ sudo ufw limit from &quot;ネットワークアドレス&quot; to &quot;ホストアドレス&quot; port &quot;ポート番号&quot;&quot;
-</code></pre><p>ルールの削除</p>
-<pre><code>$ sudo ufw delete &quot;番号&quot;
-</code></pre><p>ファイアーウォールの最読込</p>
-<pre><code>$ sudo ufw reload
-</code></pre><h2 id="設定方法">設定方法</h2>
-<p>まずufwの状態を表示します．</p>
-<pre><code>$ sudo ufw staus
+<p>上記の環境で<a href="https://kaedefuto.github.io/kaede_blog/posts/1/conda/">前回の記事</a>と同様に<strong>conda</strong>を使って<a href="https://pytorch.org/">PyTorch</a>をインストールしました．</p>
+<p>GPUが使えるかどうかを確認します．</p>
+<pre><code>import torch  
+print(torch.cuda.is_available())
+</code></pre><p><strong>True</strong>と表示されたのGPUが使えると思いきや，実際に学習させると以下のエラーが出て，学習ができませんでした．</p>
+<pre><code>__init__.py:104: UserWarning: 
+NVIDIA RTX A6000 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA RTX A6000 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
 
-#状態：非アクティブ
-</code></pre><p>次にファイアウォールを有効化します．</p>
-<pre><code>$ sudo ufw enable
-</code></pre><p>次にルールを追加します．<br>
-ルールは順番を考慮する必要があリ，追加したルールは一番最後の位置に追加されます．<br>
-位置を指定して追加する場合は<code>insert</code>を使用します．</p>
-<pre><code>$ sudo ufw insert 1 allow from xxx.xxx.xxx.0/24 to xxx.xxx.xxx.ooo port 22
-$ sudo ufw insert 2 limit from Anywhere to any port 22
-$ sudo ufw status numberd
+  warnings.warn(incompatible_device_warn.format(device_name, capability, &quot; &quot;.join(arch_list), device_name))
 
-#    To                         Action      From
-     --                         ------      ----
-[ 1] xxx.xxx.xxx.ooo 22         ALLOW IN    xxx.xxx.xxx.0/24          
-[ 2] 22                         LIMIT IN    Anywhere  
-</code></pre><p>最後にルールを最読込して終了です．</p>
-<pre><code>$ sudo ufw reload
-</code></pre>
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+</code></pre><p>PyTorchのバージョンやCUDAのバージョンがあってなさそうなので，PyTorchのバージョンとCUDAのバージョンを変更しましたが常に同じエラーが出てしまいました．
+わからないのでエラーを調べてみると，<strong>conda</strong>だとこのGPU（NVIDIA RTX A6000）は対応していないそうです．<strong>pip</strong>だと行けるとのことだったので試してみました．</p>
+<p>今回はTorchtextの0.9.0を使うため，TorchtextのバージョンにあったPytorchをインストールしました．</p>
+<pre><code>pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+</code></pre><p>これでエラーも消え，学習することができました．</p>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -183,10 +161,10 @@ $ sudo ufw status numberd
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="https://kaedefuto.github.io/kaede_blog/tags/ufw/" rel="tag">ufw</a>
+			<a class="tags__link btn" href="https://kaedefuto.github.io/kaede_blog/tags/pytorch/" rel="tag">Pytorch</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="https://kaedefuto.github.io/kaede_blog/tags/ubuntu/" rel="tag">Ubuntu</a>
+			<a class="tags__link btn" href="https://kaedefuto.github.io/kaede_blog/tags/pip/" rel="tag">pip</a>
 		</li>
 	</ul>
 </div>
@@ -202,14 +180,8 @@ $ sudo ufw status numberd
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="https://kaedefuto.github.io/kaede_blog/posts/1/conda/" rel="prev">
+		<a class="pager__link" href="https://kaedefuto.github.io/kaede_blog/posts/3/twitter/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;前の投稿</span>
-			<p class="pager__title">PyTorch環境作成</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="https://kaedefuto.github.io/kaede_blog/posts/3/twitter/" rel="next">
-			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">TwitterAPI Academic Researchの申請方法</p>
 		</a>
 	</div>
