@@ -18,7 +18,7 @@
 		<meta itemprop="name" content="pipでPytorch環境作成">
 <meta itemprop="description" content="pipでGPUが使えるPytorch環境を構築"><meta itemprop="datePublished" content="2022-04-30T10:08:14&#43;09:00" />
 <meta itemprop="dateModified" content="2022-04-30T10:08:14&#43;09:00" />
-<meta itemprop="wordCount" content="706">
+<meta itemprop="wordCount" content="707">
 <meta itemprop="keywords" content="Pytorch,pip," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="pipでPytorch環境作成"/>
@@ -128,7 +128,7 @@
 <p><a href="https://kaedefuto.github.io/kaede_blog/posts/1/conda/">前回の記事</a>通りに環境を作成し，GPUが使えるかどうかを確認します．</p>
 <pre><code>import torch  
 print(torch.cuda.is_available())
-</code></pre><p>無事<strong>True</strong>と表示されたのGPUが使えると思いきや，実際に学習させると以下のエラーが出たため学習ができませんでした．</p>
+</code></pre><p>無事<strong>True</strong>と表示されたのでGPUが使えると思いきや，実際に学習させると以下のエラーが出たため学習ができませんでした．</p>
 <pre><code>__init__.py:104: UserWarning: 
 NVIDIA RTX A6000 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
 The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.

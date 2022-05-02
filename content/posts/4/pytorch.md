@@ -26,7 +26,7 @@ import torch
 print(torch.cuda.is_available())
 ```
 
-無事**True**と表示されたのGPUが使えると思いきや，実際に学習させると以下のエラーが出たため学習ができませんでした．
+無事**True**と表示されたのでGPUが使えると思いきや，実際に学習させると以下のエラーが出たため学習ができませんでした．
 
 ```
 __init__.py:104: UserWarning: 
